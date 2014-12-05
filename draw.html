@@ -11,6 +11,7 @@
           $(document).ready(function() {
             $word = $("#word");
             $word.change(function() {
+              $("svg").remove();
               WordStroker.raphael.strokeWords($("#holder").get()[0], $word.val());
             });
             WordStroker.raphael.strokeWords($("#holder").get()[0], $word.val());
