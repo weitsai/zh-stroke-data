@@ -87,6 +87,7 @@
       var a, _i, _len, _ref, _results;
       _ref = words.split(/(?:)/);
       _results = [];
+      _ref.reverse();
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         a = _ref[_i];
         _results.push(strokeWord(element, a));
