@@ -63,10 +63,10 @@
         Raphael.getColor();
         color = Raphael.getColor();
         pathAttrs = {
-          stroke: color,
+          stroke: "#000",
           "stroke-width": 5,
           "stroke-linecap": "round",
-          "fill": color
+          "fill": "#000"
         };
         timeoutSeconds = 0;
         delay = 500;
