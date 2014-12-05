@@ -16,6 +16,19 @@
             WordStroker.raphael.strokeWords($("#holder").get()[0], $word.val());
           });
         </script>
+
+        <!--Android-->
+        <script language="javascript">
+        function draw(str) {
+          $("svg").remove();
+            WordStroker.raphael.strokeWords($("#holder").get()[0], str);
+        };
+        function draw2(str) {
+          $("svg").remove();
+          WordStroker.raphael.strokeWords($("#holder").get()[0], str);
+        };
+
+        </script>
     </head>
     <body>
         <input type="text" id="word" value="發"/>
