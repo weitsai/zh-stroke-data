@@ -69,7 +69,7 @@
           "fill": "#000"
         };
         timeoutSeconds = 0;
-        delay = 500;
+        delay = 1000;
         _ref = doc.getElementsByTagName('Outline');
         _results = [];
         for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
@@ -80,6 +80,7 @@
             }), timeoutSeconds += delay);
           })(outline));
         }
+        Android.drawEnd();
         return _results;
       });
     };
