@@ -80,7 +80,7 @@
             }), timeoutSeconds += delay);
           })(outline));
         }
-        Android.drawEnd();
+        setTimeout(function() {Android.drawEnd()}, timeoutSeconds + delay);
         return _results;
       });
     };
